@@ -27,6 +27,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import com.google.android.gms.auth.api.identity.BeginSignInRequest;
 import com.google.android.gms.auth.api.identity.Identity;
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private WebView webView;
     private SwipeRefreshLayout swipeRefreshLayout;
     private View splashScreen;
+    private ImageView splashImage;
     private ImageView noWifiImage;
     private static final int SPLASH_DURATION = 5000; // 5 seconds
 
@@ -60,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         splashScreen = findViewById(R.id.splash_screen);
+        splashImage = findViewById(R.id.splash_image);
         swipeRefreshLayout = findViewById(R.id.swipe_layout);
         webView = findViewById(R.id.webview);
         noWifiImage = findViewById(R.id.no_wifi_image);
@@ -83,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 R.color.colorPrimary);
 
         applySystemThemeUI();
+        updateSplashTheme();
         setupGoogleOneTap();
 
         // WebView setup
@@ -230,13 +234,24 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /** SPLASH THEME **/
+    private void updateSplashTheme() {
+        if (splashScreen == null || splashScreen.getVisibility() != View.VISIBLE) {
+            return;
+        }
+        if (splashImage != null) {
+            splashImage.setImageResource(R.drawable.splash_launcher);
+        }
+        splashScreen.setBackgroundColor(ContextCompat.getColor(this, R.color.splash_background));
+    }
+
     /** THEME SETUP **/
     private void applySystemThemeUI() {
         boolean isDark = (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK)
                 == Configuration.UI_MODE_NIGHT_YES;
 
         Window window = getWindow();
-        int barColor = isDark ? Color.parseColor("#1c8a09") : Color.parseColor("#98FB98");
+        int barColor = isDark ? Color.parseColor("#211F18") : Color.parseColor("#E7E5DF");
         window.setStatusBarColor(barColor);
         window.setNavigationBarColor(barColor);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
@@ -366,6 +381,7 @@ public class MainActivity extends AppCompatActivity {
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
         applySystemThemeUI();
+        updateSplashTheme();
         setThemeForWebView();
     }
 

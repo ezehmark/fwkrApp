@@ -32,13 +32,14 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFFFFF">
+        android:background="@color/splash_background">
 
         <ImageView
+            android:id="@+id/splash_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/launcherimagesoftcl" />
+            android:src="@drawable/splash_launcher" />
     </FrameLayout>
 
 </FrameLayout>
