@@ -9,7 +9,7 @@
 
     <application
         android:allowBackup="true"
-        android:label="369FWKR"
+        android:label="FWKR"
         android:icon="@mipmap/ic_launcher"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         
