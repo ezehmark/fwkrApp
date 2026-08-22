@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
             if (isConnected()) {
                 swipeRefreshLayout.setVisibility(View.VISIBLE);
                 webView.setVisibility(View.VISIBLE);
-                webView.loadUrl("https://v0-softclicksapp.vercel.app");
+                webView.loadUrl("https://fwkr.vercel.app");
             } else {
                 // overlay no wifi network
                 noWifiImage.setVisibility(View.VISIBLE);
@@ -204,7 +204,7 @@ public class MainActivity extends AppCompatActivity {
                         swipeRefreshLayout.setVisibility(View.VISIBLE);
                     }
                     if (webView.getUrl() == null) {
-                        webView.loadUrl("https://v0-softclicksapp.vercel.app");
+                        webView.loadUrl("https://fwkr.vercel.app");
                     }
                 });
             }
