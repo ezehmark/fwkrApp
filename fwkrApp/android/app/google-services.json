@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "544240947967",
+    "project_id": "softclicks",
+    "storage_bucket": "softclicks.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544240947967:android:d89b8f814e3041c3b4f2ca",
+        "android_client_info": {
+          "package_name": "com.softclicks.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD57rUNr7JXtrrWFl58iJffyxcrUWonErk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
