@@ -1,4 +1,4 @@
-package com.softclicks.app;
+package com.ezehmark.fwkrapp;
 
 import android.content.Intent;
 import android.content.res.Configuration;

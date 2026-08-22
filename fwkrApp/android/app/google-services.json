@@ -1,26 +1,44 @@
 {
   "project_info": {
-    "project_number": "544240947967",
-    "project_id": "softclicks",
-    "storage_bucket": "softclicks.firebasestorage.app"
+    "project_number": "16481164314",
+    "project_id": "app-11e20",
+    "storage_bucket": "app-11e20.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:544240947967:android:d89b8f814e3041c3b4f2ca",
+        "mobilesdk_app_id": "1:16481164314:android:545bc3ee1acf00c25ec5a3",
         "android_client_info": {
-          "package_name": "com.softclicks.app"
+          "package_name": "com.ezehmark.fwkrapp"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "16481164314-odccildduqv1sn2ep6qlt1271gcgs29u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ezehmark.fwkrapp",
+            "certificate_hash": "7f0cde7ed8c515dd6647a36f0404628d03def32e"
+          }
+        },
+        {
+          "client_id": "16481164314-mqh18st88hbn4ngtnf07a8fjimg4ve9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyD57rUNr7JXtrrWFl58iJffyxcrUWonErk"
+          "current_key": "AIzaSyDJFutsSe9NiX9AbhCI2GFfHKMzEIwH1DQ"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "16481164314-mqh18st88hbn4ngtnf07a8fjimg4ve9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

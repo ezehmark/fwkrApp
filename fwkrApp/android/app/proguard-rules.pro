@@ -21,11 +21,10 @@
 # ============================
 # Your App Classes
 # ============================
--keep class com.softclicks.app.MainApplication { *; }
--keep class com.softclicks.app.MainActivity { *; }
+-keep class com.ezehmark.fwkrapp.MainActivity { *; }
 
 # Keep only classes in your app package
--keep class com.softclicks.app.** { *; }
+-keep class com.ezehmark.fwkrapp.** { *; }
 
 # ============================
 # Remove unused AndroidX / support classes
